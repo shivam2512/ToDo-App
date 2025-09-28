@@ -1,13 +1,13 @@
 name: Shivam Shinde
 
 on:
-push:
-branches: [ main ]
+ push:
+  branches: [ main ]
 
 jobs:
-demo: 
-runss-on: ubuntu-latest
+ demo: 
+  runs-on: ubuntu-latest
 
 steps:
--name: Greetings
-run: echo "Hello Welcome to push in main branch"
+ -name: Greetings
+   run: echo "Hello Welcome"
