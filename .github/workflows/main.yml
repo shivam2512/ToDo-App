@@ -1,0 +1,13 @@
+name: Shivam Shinde
+
+on:
+push:
+branches: [ main ]
+
+jobs:
+demo: 
+runss-on: ubuntu-latest
+
+steps:
+-name: Greetings
+run: echo "Hello Welcome to push in main branch"
