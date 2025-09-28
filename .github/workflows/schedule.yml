@@ -1,13 +1,14 @@
-name: Schedule job
+# .github/workflows/scheduled.yml
+name: Run at 12:10 PM
 
 on:
- schedule:
-  - cron: "4 12 * * *"
+  schedule:
+    - cron: '10 6 * * *'  # Runs at 12:10 PM IST (which is 6:10 AM UTC)
 
 jobs:
-   runs-script: 
+  run-task:
     runs-on: ubuntu-latest
-
     steps:
-     - name: Print Message
-       run: echo "Scheduled Job Executed"
+      - name: Say Hello
+        run: echo "Hello! It's 12:10 PM IST 🎉"
+
