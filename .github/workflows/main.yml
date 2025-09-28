@@ -3,7 +3,7 @@ name: Run at 12:10 PM
 
 on:
   schedule:
-    - cron: '27 6 * * *'  # Runs at 2:10 PM IST (which is 8:10 AM UTC)
+    - cron: '10 8 * * *'  # Runs at 2:10 PM IST (which is 8:10 AM UTC)
 
 jobs:
   run-task:
