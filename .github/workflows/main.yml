@@ -1,13 +1,13 @@
-name: Shivam Shinde
+# .github/workflows/scheduled.yml
+name: Run at 12:10 PM
 
 on:
- push:
-  branches: [ main ]
+  schedule:
+    - cron: '10 8 * * *'  # Runs at 2:10 PM IST (which is 8:10 AM UTC)
 
 jobs:
- demo: 
-  runs-on: ubuntu-latest
-
-steps:
- -name: Greetings
-   run: echo "Hello Welcome"
+  run-task:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello! It's 12:10 PM IST 🎉"
